@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font - bebas neue -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        yellow: "#FECC02",
+                        black: "#131313",
+                        grey: "#4E4E4E",
+                    },
+                    fontFamily: {
+                        bebas: ["Bebas Neue", "cursive"],
+                    },
+                },
+            },
+        };
+    </script>
+    <title>JK Production</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="bg-white h-20 fixed top-0 right-0 left-0 font-bebas">
+        <div class="flex justify-between h-20 items-center p-4 max-w-7xl mx-auto">
+            <h1 class="text-4xl text-yellow">JK Production</h1>
+            <ul class="flex text-lg gap-8">
+                <li class="hover:text-yellow"><a href="#about">About US</a></li>
+                <li class="hover:text-yellow"><a href="#movies">Our Movies</a></li>
+                <li class="hover:text-yellow"><a href="#services">Services</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- banner section -->
+    <section class="h-screen bg-[url('/images/banner.jpg')] bg-cover">
+        <div class="h-full w-full max-w-7xl mx-auto flex p-7 items-center font-bebas">
+            <div class="text-white">
+                <h2 class="text-lg">Movie Production Studio</h2>
+                <h1 class="text-7xl">
+                    Films Made to <br />
+                    <span class="text-yellow">Perfection</span>
+                </h1>
+                <p class="max-w-xl tracking-widest my-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ullam eius, laborum
+                    maiores voluptas quos quae cumque architecto excepturi corrupti?
+                </p>
+                <button type="button"
+                    class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none rounded-lg border hover:bg-yellow transition-all">
+                    Discover More
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- about us -->
+    <section class="p-4 lg:p-24 font-bebas" id="about">
+        <div class="border-2 border-black w-full max-w-7xl mx-auto h-full">
+            <div class="md:flex p-5 gap-5">
+                <div class="w-full lg:w-1/2">
+                    <img src="./images/camera-man.jpg" alt="" />
+                    <button type="button"
+                        class="py-2.5 px-5 text-lg text-gray-900 bg-white focus:outline-none rounded-md border w-full md:w-1/4 md:absolute md:-mt-6 md:ml-20">
+                        23 YEARS of EXPERIENCE
+                    </button>
+                </div>
+                <div class="w-full lg:w-1/2 leading-relaxed">
+                    <h2 class="mt-4 lg:mt-0">ABOUT US</h2>
+                    <h1 class="text-7xl">Filming Experience <br />Just Got better</h1>
+                    <p class="tracking-wide text-gray">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi id dolore, totam vero
+                        quo omnis laboriosam quos perspiciatis, cumque libero ipsam aliquid, cum recusandae
+                        possimus accusamus quis quod doloribus dolor?
+                    </p>
+                    <button type="button"
+                        class="py-2.5 px-5 mt-12 text-sm font-medium text-gray-900 focus:outline-none rounded-lg border hover:bg-yellow transition-all">
+                        Discover More
+                    </button>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-4 p-5">
+                <div>
+                    <h2 class="text-4xl border-t-4">OUR VISION</h2>
+                    <p class="text-gray">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur voluptatibus
+                        aliquam, inventore doloribus ab est cumque magnam exercitationem eos iste excepturi
+                        facilis expedita ullam similique commodi, quia omnis, dolorum ipsam.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-4xl border-t-4">OUR Mission</h2>
+                    <p class="text-gray">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur voluptatibus
+                        aliquam, inventore doloribus ab est cumque magnam exercitationem eos iste excepturi
+                        facilis expedita ullam similique commodi, quia omnis, dolorum ipsam.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-4xl border-t-4">OUR Motto</h2>
+                    <p class="text-gray">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur voluptatibus
+                        aliquam, inventore doloribus ab est cumque magnam exercitationem eos iste excepturi
+                        facilis expedita ullam similique commodi, quia omnis, dolorum ipsam.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- movies -->
+    <section class="border bg-grey p-4 lg:p-24 font-bebas" id="movies">
+        <div class="flex justify-between">
+            <div>
+                <h2>OUR MOVIES</h2>
+                <h1 class="text-7xl mb-4">Movie collection</h1>
+            </div>
+            <div>
+                <button type="button"
+                    class="py-2.5 px-5 mt-12 text-sm font-medium bg-white text-gray-900 focus:outline-none rounded-lg border hover:bg-yellow transition-all">
+                    Discover More
+                </button>
+            </div>
+        </div>
+        <div class="grid md:grid-cols-4 gap-4">
+            <div class="border-2 p-4 h-full w-full">
+                <img class="h-full w-full" src="./images/inception.jpg" alt="" srcset="" />
+            </div>
+            <div class="border-2 p-4">
+                <img class="h-full w-full" src="./images/interstellar.jpg" alt="" srcset="" />
+            </div>
+            <div class="border-2 p-4">
+                <img class="h-full w-full" src="./images//fractured.jpg" alt="" srcset="" />
+            </div>
+            <div class="border-2 p-4">
+                <img class="h-full w-full" src="./images/tenet.jpg" alt="" srcset="" />
+            </div>
+        </div>
+    </section>
+    <!-- services -->
+    <section class="p-4 lg:p-24 font-bebas" id="services">
+        <div class="text-center">
+            <h2>services</h2>
+            <h1 class="text-7xl mb-4">what we offer</h1>
+        </div>
+        <div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center justify-center mx-auto">
+                <div class="border-2 border-black p-4 z">
+                    <img class="justify-center mx-auto" src="./images/icons/3d-glasss.png" alt="" />
+                    <h2 class="text-2xl">3D MOVIES</h2>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+                </div>
+                <div class="border-2 border-black p-4">
+                    <img class="justify-center mx-auto" src="./images/icons/camera.png" alt="" />
+                    <h2 class="text-2xl">movies director</h2>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+                </div>
+                <div class="border-2 border-black p-4">
+                    <img class="justify-center mx-auto" src="./images/icons/count-down.png" alt="" />
+                    <h2 class="text-2xl">actor action</h2>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+                </div>
+                <div class="border-2 border-black p-4">
+                    <img class="justify-center mx-auto" src="./images/icons/cut-board.png" alt="" />
+                    <h2 class="text-2xl">Movie Production</h2>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+                </div>
+                <div class="border-2 border-black p-4">
+                    <img class="justify-center mx-auto" src="./images/icons/director-chair.png" alt="" />
+                    <h2 class="text-2xl">Film maker</h2>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+                </div>
+                <div class="border-2 border-black p-4">
+                    <img class="justify-center mx-auto" src="./images/icons/film.png" alt="" />
+                    <h2 class="text-2xl">Studio Production</h2>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+                </div>
+                <div class="border-2 border-black p-4">
+                    <img class="justify-center mx-auto" src="./images/icons/rim.png" alt="" />
+                    <h2 class="text-2xl">Rolling Production</h2>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+                </div>
+                <div class="border-2 border-black p-4">
+                    <img class="justify-center mx-auto" src="./images/icons/theater.png" alt="" />
+                    <h2 class="text-2xl">Drama Movies</h2>
+                    <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<footer class="bg-[url('/images/footer-bg.jpg')] bg-cover h-72">
+    <div class="text-white text-center p-4">
+        <h1 class="text-7xl font-bebas">JK Production</h1>
+        <h2 class="text-xl font-bebas">next level Experience</h2>
+        <p class="md:w-1/4 mx-auto mt-4">
+            Feugiat nibh litora semper proin nullam facilisi volutpat ex ullamcorper.
+        </p>
+        <p class="mt-14 text-sm tracking-wide">
+            Copyright © 2021 JK Production, All rights reserved.
+        </p>
+    </div>
+</footer>
+
+</html>
